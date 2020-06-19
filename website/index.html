@@ -1,0 +1,333 @@
+<html>
+<head>
+    <title>Nota Azul - Sua Aula Interativa</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nota azul website">
+    <meta name="keywords" content="educação à distância, EAD, cursos online, aula interativa, pedagogia">
+    <meta name="author" content="Nota Azul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/85921d822d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header>
+        <div class="cabecalho-container">
+            <div class="cabecalho-conteudo">
+                <div class="logo">img</div>
+                <div class="nav-bar">
+                    <!--MENU MOBILE-->
+                    <div id="btn-mobile"><i class="fas fa-bars btn-mobile" onclick="openMenu()"></i></div>
+                    <ul class="nav-mobile transform" id="nav-mobile">
+                        <li><a href="#inicio" onclick="smoothScrolling()" id="inicioLink">Início</a></li>
+                        <li><a href="#sobre" onclick="smoothScrolling()" id="sobreLink">Sobre</a></li>
+                        <li><a href="#servicos" onclick="smoothScrolling()" id="servicosLink">Serviços</a></li>
+                        <li><a href="#investimento" onclick="smoothScrolling()" id="investimentoLink">Investimento</a></li>
+                        <li><a href="#portfolio" onclick="smoothScrolling()" id="portfolioLink">Portfolio</a></li>
+                        <li><a href="#contato" onclick="smoothScrolling()" id="contatoLink">Contato</a></li>                        
+                    </ul>
+
+                    <!--MENU DESKTOP-->
+                    <ul class="nav-desktop">
+                        <li><a href="#inicio" onclick="smoothScrolling()" id="inicioLink">Início</a></li>
+                        <li><a href="#sobre" onclick="smoothScrolling()" id="sobreLink">Sobre</a></li>
+                        <li><a href="#servicos" onclick="smoothScrolling()" id="servicosLink">Serviços</a></li>
+                        <li><a href="#investimento" onclick="smoothScrolling()" id="investimentoLink">Investimento</a></li>
+                        <li><a href="#portfolio" onclick="smoothScrolling()" id="portfolioLink">Portfolio</a></li>
+                        <li><a href="#contato" onclick="smoothScrolling()" id="contatoLink">Contato</a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--BANNER-->
+    <div class="container" id="inicio">
+        <div class="banner-content">
+            <div class="banner-txt">
+                <h1 class="banner-title">SUA AULA<br> EM UM SHOW DE<br> <span class="negrito"> INTERATIVIDADE</span></h1>
+                <p class="banner-sub-title">Transforme agora mesmo o seu conteúdo em uma atividade interativa 100% digital.</p>
+                <a href="#servicos" onclick="smoothScrolling()" id="servicosLink2"><div class="btn-banner">CONFIRA</div></a>
+            </div>
+            <div class="banner-img"><img src="img/banner-img2.png"></div> 
+                     
+        </div>
+    </div>
+
+    <!--ARTIGO-->
+    <div class="container" id="sobre">        
+        <div class="artigo-content">
+            <div class="artigo-main-title">
+                <h2>A NOTA AZUL</h2>
+                <p class="sobre-txt">é uma empresa sediada em Aracaju/SE especializada no desenvolvimento de objetos de aprendizagem para educação à distância e presencial. Desenvolvemos projetos estáticos como e-books e infográficos e também construimos produtos interativos como jogos digitais, Quiz e formulários de avaliação.
+                Conheça nosso trabalho e entre em contato para transformarmos a sua aula em um show de interatividade!</p>
+            </div>
+            <div class="banner-img"><img src="img/ead-img.png"></div> 
+        </div>
+    </div>
+
+
+    <!--TIPOS DE OBJETOS-->
+    <div class="container" id="servicos">
+        <div class="artigo-main-title">
+            <h2>SERVIÇOS</h2>
+            <p>Desenvolvemos diversos objetos de aprendizagem como e-books, jogos digitais e infográficos.</p>
+        </div>
+        
+        <div class="artigo-content">
+            <div class="artigo tipo2">
+                <i class="fas fa-gamepad artigo-img"></i>
+                <h3 class="artigo-title">JOGOS DIGITAIS</h3>
+                <p class="artigo-txt">Projeto interativo com sistema de pontuação e progresso bem definidos, onde ao final da atividade o aluno recebe um resultado do seu desempenho.</p>
+            </div>
+    
+            <div class="artigo tipo2">
+                <i class="far fa-image artigo-img"></i>
+                <h3 class="artigo-title">INFOGRÁFICOS</h3>
+                <p class="artigo-txt">Apresentação de informações com preponderância de elementos gráfico-visuais, podendo ser classificado como estático ou interativo.</p>
+            </div>
+    
+            <div class="artigo tipo2">
+                <i class="fas fa-book artigo-img"></i>
+                <h3 class="artigo-title">E-BOOK</h3>
+                <p class="artigo-txt">Projeto gráfico de livro em formato digital composto por textos, gráficos e imagens apresentando um conteúdo específico ou conjunto de conteúdos.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--PREÇOS-->
+    <div class="container investimento" id="investimento">
+        <div class="artigo-main-title"><h2>INVESTIMENTO</h2></div>
+        <div class="artigo-content">
+            <div class="artigo tipo3">
+                <h3 class="artigo-title preco-title">E-BOOK</h3>
+                <div class="preco">
+                    <p>R$</p>
+                    <h3>127</h3>
+                    <p>,00</p>
+                </div>
+                <p class="artigo-txt">Desenvolvimento de 1(um) e-book em PDF, sem recursos interativos, áudio ou video.</p>
+                <ul class="preco-lista">
+                    <li><i class="far fa-check-circle"></i> 01 Objeto de aprendizagem estático</li>
+                    <li><i class="far fa-check-circle"></i> Suporte para publicação do objeto</li>
+                    <li><i class="far fa-times-circle"></i> Atualização de conteúdo gratuita</li>
+                    <li><i class="far fa-times-circle"></i> Servidor dedicado</li>
+                    <li><i class="far fa-times-circle"></i> Hospedagem e criação de website</li>
+                </ul>
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579981191742"><div class="btn-azul">CLIQUE AQUI</div></a>
+            </div>
+
+            <div class="artigo tipo3">
+                <h3 class="artigo-title preco-title">MATERIAL INTERATIVO</h3>
+                <div class="preco">
+                    <p>R$</p>
+                    <h3>300</h3>
+                    <p>,00</p>
+                </div>
+                <p class="artigo-txt">Desenvolvimento de 1(um) objeto de aprendizagem interativo de qualquer natureza: e-book, game, Quiz ou infográfico.</p>
+                <ul class="preco-lista">
+                    <li><i class="far fa-check-circle"></i> 01 Objeto de aprendizagem interativo</li>
+                    <li><i class="far fa-check-circle"></i> Suporte para publicação do objeto</li>
+                    <li><i class="far fa-times-circle"></i> Atualização de conteúdo gratuita</li>
+                    <li><i class="far fa-times-circle"></i> Servidor dedicado</li>
+                    <li><i class="far fa-times-circle"></i> Hospedagem e criação de website</li>
+                </ul>
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579981191742"><div class="btn-azul">CLIQUE AQUI</div></a>
+            </div>
+
+            <div class="artigo tipo3">
+                <h3 class="artigo-title preco-title">PLANO MENSAL</h3>
+                <div class="preco">
+                    <p>R$</p>
+                    <h3>1250</h3>
+                    <p>,00</p>
+                </div>
+                <p class="artigo-txt">Desenvolvimento mensal de objetos de aprendizagem ilimitados de qualquer natureza: e-book, game, Quiz ou infográfico.</p>
+                <ul class="preco-lista">
+                    <li><i class="far fa-check-circle"></i> Objetos de aprendizagem ilimitados</li>
+                    <li><i class="far fa-check-circle"></i> Suporte para publicação do objeto</li>
+                    <li><i class="far fa-check-circle"></i> Atualização de conteúdo gratuita</li>
+                    <li><i class="far fa-check-circle"></i> Servidor dedicado</li>
+                    <li><i class="far fa-check-circle"></i> Hospedagem e criação de website</li>
+                </ul>
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579981191742"><div class="btn-azul">CLIQUE AQUI</div></a>
+            </div>
+
+
+
+
+    
+
+        </div>
+    </div>
+
+
+    <!--ARTIGO-->
+    <div class="container" id="vantagens">
+        <div class="artigo-main-title"><h2>POR QUE UTILIZAR OBJETOS DE APRENDIZAGEM?</h2></div>
+        <div class="artigo-content">
+            <div class="artigo">
+                <img src="img/diferencial1.svg">
+                <p class="artigo-txt">Permite aos professores ensinarem com mais eficiência e aos alunos aprenderem de uma maneira mais interativa.</p>
+            </div>
+
+            <div class="artigo">
+                <img src="img/diferencial2.svg">
+                <p class="artigo-txt">Permite que o aluno vivencie no ambiente virtual situações que ele precisará resolver no seu dia a dia como profissional.</p>
+            </div>
+
+            <div class="artigo">
+                <img src="img/diferencial3.svg">
+                <p class="artigo-txt">Pode ser utilizado como parte dos materiais de outras disciplinas.</p>
+            </div>
+
+            <div class="artigo">
+                <img src="img/diferencial4.svg">
+                <p class="artigo-txt">São recursos educacionais suportados por tecnologias utilizadas no processo de aprendizagem, além de utilizar recursos de multimídia e interatividade.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--PORTFOLIO-->
+    <div class="container" id="portfolio">
+        <div class="artigo-main-title"><h2>PORTFÓLIO</h2></div>
+        <div class="portfolio-content">
+            <a href="objetos/abordagens-emergentes/index.html"><img class="objeto-img" src="objetos/abordagens-emergentes/abordagens-emergentes-thumb.jpg"></a>
+            <a href="objetos/futebol/parte1.pdf"><img class="objeto-img" src="objetos/futebol/futebol-thumb.jpg"></a>
+            <a href="objetos/fisiologia-da-respiracao/ndex.html"><img class="objeto-img" src="objetos/fisiologia-da-respiracao/fisiologia-da-respiracao-thumb.jpg"></a>
+            <a href="objetos/treinamento-esportivo/index.html"><img class="objeto-img" src="objetos/treinamento-esportivo/treinamento-esportivo-thumb.jpg"></a>
+            <a href="objetos/gestao-de-transportes/parte1.pdf"><img class="objeto-img" src="objetos/gestao-de-transportes/gestao-de-transportes-thumb.jpg"></a>
+            <a href="objetos/fundamentos-da-teologia/index.html"><img class="objeto-img" src="objetos/fundamentos-da-teologia/fundamentos-da-teologia-parte2-thumb.jpg"></a>
+            <a href="objetos/fisica-mecanica/index.html"><img class="objeto-img" src="objetos/fisica-mecanica/fisica-mecanica-thumb.jpg"></a>
+            <a href="objetos/libras/tema3/index.html"><img class="objeto-img" src="objetos/libras/tema3/libras-thumb.jpg"></a>
+            <a href="objetos/teoria-e-pratica-do-jogo/index.html"><img class="objeto-img" src="objetos/teoria-e-pratica-do-jogo/teoria-e-pratica-do-jogo-thumb.jpg"></a>
+            <a href="objetos/cultura-e-clima-organizacional/Infografico-Cultura-e-Clima-Organizacional.pdf"><img class="objeto-img" src="objetos/cultura-e-clima-organizacional/cultura-e-clima-thumb2.jpg"></a>
+            <a href="objetos/efeitos-do-cigarro/index.html"><img class="objeto-img" src="objetos/efeitos-do-cigarro/efeitos-do-cigarro-thumb.jpg"></a>
+            <a href="objetos/gerenciamento-da-comunicacao/index.html"><img class="objeto-img" src="objetos/gerenciamento-da-comunicacao/gerenciamento-da-comunicacao-thumb.jpg"></a>
+
+
+        </div>
+    </div>
+
+
+    <!--CONTATO-->
+    <div class="container" id="contato">
+        <div class="contato">
+            <div class="artigo-main-title contato-txt">
+                <h2>FALE CONOSCO</h2>
+                <hr>
+                <p>Entre em contato conosco diretamente por email, Whatasapp ou pelo Instagram.</p>
+            </div>
+    
+            <div class="artigo-content">
+                <a href="mailto:marcusfreitasantos@gmail.com"><img src="img/mail-icon.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=5579981191742"><img src="img/whats-icon.png"></a>
+                <a href="https://instagram.com/_notaazul"><img src="img/insta-icon.png"></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--RODAPÉ-->
+    <footer class="container" id="footer">
+        <p>©NotaAzul 2020. Todos os direitos reservados.</p>            
+    </footer>
+
+
+
+
+
+
+<script>
+function openMenu(){
+    var menu = document.getElementById("nav-mobile");
+    menu.classList.toggle('transform-active');
+}
+
+function smoothScrolling(){
+    var inicioLink = document.getElementById("inicioLink");
+    var sobreLink = document.getElementById("sobreLink");
+    var servicosLink = document.getElementById("servicosLink");
+    var investimentoLink = document.getElementById("investimentoLink");
+    var portfolioLink = document.getElementById("portfolioLink");
+    
+    if(inicioLink.click){
+        document.querySelector('#inicio').scrollIntoView({ 
+        behavior: 'smooth' 
+        });
+    }
+
+    if(sobreLink.click){
+        document.querySelector('#sobre').scrollIntoView({ 
+        behavior: 'smooth' 
+        });
+    }
+
+    if(servicosLink.click){
+        document.querySelector('#servicos').scrollIntoView({ 
+        behavior: 'smooth' 
+        });
+    }
+
+    if(investimentoLink.click){
+        document.querySelector('#investimento').scrollIntoView({ 
+        behavior: 'smooth' 
+        });
+    }
+
+    if(portfolioLink.click){
+        document.querySelector('#portfolio').scrollIntoView({ 
+        behavior: 'smooth' 
+        });
+    }
+
+    if(contatoLink.click){
+        document.querySelector('#contato').scrollIntoView({ 
+        behavior: 'smooth' 
+        });
+    }
+}
+
+
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

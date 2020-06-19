@@ -1,0 +1,532 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/*CABEÇALHO E NAVBAR*/
+
+.cabecalho-container{
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 999;
+
+}
+
+.cabecalho-conteudo{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo{
+    width: 10%;
+    background: url(../img/horizontal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 40px;
+    font-size: 0;
+}
+
+.nav-desktop{
+    display: flex;
+    flex-direction: row;    
+}
+
+.nav-desktop li{
+      
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+.nav-desktop li a{
+    color: #036D91;
+    transition: .3s;
+    padding: 0px 15px;  
+}
+
+.nav-desktop li a:hover{
+    color: #03B5BF;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-mobile{
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-mobile li{
+    padding: 20px 60px;
+}
+
+.nav-mobile li a{
+    color: #036D91;
+    text-transform: uppercase;    
+}
+
+.nav-mobile li:hover{
+    background: #03B5BF;
+    color: white!important;
+}
+
+.btn-mobile{
+    display: none !important;
+    color: #036D91;
+    font-size: 24px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.btn-azul{
+    color: white;
+    background: #036D91;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 18px 32px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 30px 0;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+}
+
+.btn-azul:hover{
+    background: #028F96;
+}
+
+
+/*BANNER*/
+#inicio{
+    background: url(../img/banner-bg.jpg) fixed;
+    background-size: cover;
+}
+
+.banner-content{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;    
+}
+
+.banner-img{
+    display: flex;
+    justify-content: right;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+.banner-title{
+    font-weight: 300;
+    font-size: 4em;
+    color: #ffc857;
+}
+
+.negrito{
+    font-weight: 800;
+}
+
+.banner-sub-title{
+    font-size: 1.2em;
+    color: #eee;
+    line-height: 1.2em;
+}
+
+.btn-banner{
+    color: white;
+    background: #03B5BF;
+    font-size: 16px;
+    padding: 18px 32px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    margin-top: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-banner:hover{
+    background: #028F96;
+}
+
+
+/*SOBRE*/
+#sobre .artigo-main-title{
+    width: 50%;
+    border: none;
+}
+
+#sobre .artigo-content{
+    align-items: center;
+}
+
+.sobre-txt{
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+#sobre h2{
+    text-align: left;
+    padding: 0;
+}
+
+/*artigo*/
+#servicos{
+    padding: 100px 0;
+}
+.artigo-content{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.artigo{
+    width: 20%;
+    padding:60px 20px;
+    background: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.tipo2{
+    width: 28%;
+}
+
+.artigo img{
+    width: 100px;
+}
+
+.artigo-txt{
+    font-size: 1em;
+    padding: 15px;
+    color: #404040;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+.artigo-main-title{
+    text-align: center;
+    padding: 10px 0;
+    color: #036D91;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 40px;
+}
+
+.artigo-main-title h2{
+    font-weight: 700 !important;
+    padding: 10px;
+    font-size: 1.8em;
+    color: #036D91;
+    font-weight: 500;
+}
+
+.artigo-main-title p{
+    font-size: 1.2em;
+    color: #404040;
+}
+
+.artigo-title{
+    font-size: 1.2em;
+    padding: 10px 0;
+    font-weight: 500;
+    color: #036D91;
+}
+
+.artigo-img{
+    font-size: 4em;
+    color: #036D91;
+}
+
+/*PREÇOS*/
+.tipo3{
+    width: 30%;
+    padding: 0 !important;
+}
+.investimento{
+    background: url(../img/header-bg-ead-azul.jpg) fixed;
+    padding: 100px 0;
+}
+
+.investimento h2{
+    color: white;
+}
+
+.preco-title{
+    background: #03B5BF;
+    padding: 30px 0;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    font-size: 1.5em;
+    font-kerning: normal;
+}
+
+.preco{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.preco h3{
+    font-weight: 800;
+    font-size: 5em;
+    color: #03B5BF;
+}
+
+.preco p{
+    font-size: 1.5em;
+    color: #404040;
+}
+
+.tipo3 .artigo-txt{
+    padding: 40px 30px;
+}
+
+
+
+.preco-lista li{
+    color: #808080;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.fa-check-circle{
+    color: chartreuse;
+}
+
+.fa-times-circle{
+    color: crimson;
+}
+
+/*PORTFOLIO GALERIA*/
+.objeto-img{
+    width: 350px;
+    height: auto;
+    border: 1px solid #eee;
+    transition: .5s;
+}
+
+.objeto-img:hover{
+    opacity: 0.8;
+}
+
+.portfolio-content{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*CONTATO*/
+#contato{
+    padding: 80px 0;
+    background: url(../img/banner-bg.jpg) fixed;
+    background-size: cover;
+}
+
+#contato hr{
+    color: white;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center; 
+    width: 80%;
+}
+
+.contato-txt{
+    width: 60% !important;
+}
+
+.contato-txt, .contato-txt h2{
+    text-align: left !important;
+    padding:  0 !important;
+    border: none !important;
+    margin: 0 !important;
+    color: white;
+}
+
+.contato-txt p{
+    color: #ccc;
+}
+
+
+#contato .artigo-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#contato .artigo-content img{
+    width: 60px;
+    padding: 10px;
+}
+
+#contato a{
+    transition: .5s;
+}
+
+#contato a:hover{
+    opacity: 0.5;
+}
+
+
+
+
+/*FOOTER*/
+#footer {
+    font-size: 12px;
+    text-align: center !important;
+    padding: 15px 0!important;
+    background: #010a0e;
+    color: #ccc;
+}
+
+
+
+
+/*MEDIA-QUERIES*/
+@media (max-width: 425px){
+    .logo{
+        width: 30%;
+        background: url(../img/horizontal.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding: 30px;
+        font-size: 0;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: -1080;        
+        background: #ccc;
+        z-index: -1;
+    }
+
+    .transform {
+        -webkit-transition: all .5s ease;  
+        -moz-transition: all .5s ease;  
+        -o-transition: all .5s ease;  
+        -ms-transition: all .5s ease;  
+        transition: all .5s ease;
+    }
+
+    .transform-active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 70px;        
+        background: #ccc;
+    }
+
+
+
+    .btn-mobile{
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .banner-content, .container, .artigo-content, .contato, #contato{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .contato .artigo-content{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .banner-title{
+        font-size: 2em;
+    }
+
+
+    .artigo{
+        width: 90%;
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .contato-txt, .contato{
+        width: 90%!important;
+        padding: 0 !important;
+    }
+
+    .artigo-content{
+        width: 90vw;
+    }
+
+    #sobre .artigo-main-title{
+        width: 100%;
+    }
+
+    .sobre-txt{
+        font-size: 1em !important;
+        line-height: 1.6em;
+    }
+
+    .tipo3{
+        width: 100% !important;
+    }
+
+
+}
